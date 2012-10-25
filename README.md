@@ -2,6 +2,8 @@
 
 This extension helps embedding videos and iframes in responsive designs.
 
+It provides a `responsive-embed` mixin to apply on an element containing an embed, to scale it while keeping its ratio.
+
 See the blogs posts from [Anders M. Andersen](http://amobil.se/2011/11/responsive-embeds/) and [A List Apart](http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/) for more information.
 
 ## Installation
@@ -43,17 +45,17 @@ In your stylesheet:
 
     // 16/9 embed
     .embed-16-9 {
-      @include embed-container(16/9);
+      @include responsive-embed(16/9);
     }
 
     // 4/3 embed
     .embed-4-3 {
-      @include embed-container(4/3);
+      @include responsive-embed(4/3);
     }
 
     // default 1 ratio for a square embed
     @embed-1-1 {
-      @include embed-container;
+      @include responsive-embed;
     }
 
 You can use any ratio, as long as the result can be converted to percentages.

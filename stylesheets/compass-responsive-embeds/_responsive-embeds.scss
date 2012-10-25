@@ -4,7 +4,7 @@ $responsive-embeds-default-ratio : 1 !default;
 // Mixin
 //
 // $ratio : any valid ratio like 16/9, 4/3...
-@mixin embed-container(
+@mixin responsive-embed(
   $ratio : $responsive-embeds-default-ratio
 ) {
   position: relative;
