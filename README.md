@@ -51,6 +51,11 @@ In your stylesheet:
       @include embed-container(4/3);
     }
 
+    // default 1 ratio for a square embed
+    @embed-1-1 {
+      @include embed-container;
+    }
+
 You can use any ratio, as long as the result can be converted to percentages.
 
 ## Contributing

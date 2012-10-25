@@ -1,7 +1,12 @@
+// Default settings
+$responsive-embeds-default-ratio : 1 !default;
+
 // Mixin
 //
 // $ratio : any valid ratio like 16/9, 4/3...
-@mixin embed-container($ratio) {
+@mixin embed-container(
+  $ratio : $responsive-embeds-default-ratio
+) {
   position: relative;
   padding-bottom: 100%/$ratio;
   padding-top: 30px; /* IE6 workaround*/
