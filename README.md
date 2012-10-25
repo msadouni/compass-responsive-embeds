@@ -28,6 +28,17 @@ Add to a project:
 
 ## Usage
 
+In your html template:
+
+    <div class="embed-16-9">
+      <iframe src="http://www.youtube.com/embed/J---aiyznGQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="embed-4-3">
+      <script async class="speakerdeck-embed" data-id="4eb80921b029470054011d3f" data-ratio="1.3333333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+    </div>
+
+In your stylesheet:
+
     @import 'compass-responsive-embeds';
 
     // 16/9 embed
@@ -39,6 +50,8 @@ Add to a project:
     .embed-4-3 {
       @include embed-container(4/3);
     }
+
+You can use any ratio, as long as the result can be converted to percentages.
 
 ## Contributing
 
