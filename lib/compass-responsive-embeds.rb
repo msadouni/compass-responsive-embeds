@@ -1,9 +1,5 @@
 require "compass-responsive-embeds/version"
-
-module Compass
-  module Responsive
-    module Embeds
-      # Your code goes here...
-    end
-  end
-end
+require 'compass'
+Compass::Frameworks.register('compass-responsive-embeds',
+                             :stylesheets_directory => File.join(File.dirname(__FILE__), '..', 'stylesheets'),
+                             :templates_directory => File.join(File.dirname(__FILE__), '..', 'templates'))
