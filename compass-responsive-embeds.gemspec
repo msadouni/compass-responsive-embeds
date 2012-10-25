@@ -8,8 +8,10 @@ Gem::Specification.new do |gem|
   gem.version       = Compass::Responsive::Embeds::VERSION
   gem.authors       = ["Matthieu Sadouni"]
   gem.email         = ["matthieusadouni@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = <<-EOF
+    see http://amobil.se/2011/11/responsive-embeds/ and http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ for more information
+  EOF
+  gem.summary       = %q{a compass extension to help embed videos and iframes in responsive designs}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
