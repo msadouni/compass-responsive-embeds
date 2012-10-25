@@ -9,6 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Matthieu Sadouni"]
   gem.email         = ["matthieusadouni@gmail.com"]
   gem.description   = <<-EOF
+    a compass extension to help embed videos and iframes in responsive designs
     see http://amobil.se/2011/11/responsive-embeds/ and http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ for more information
   EOF
   gem.summary       = %q{a compass extension to help embed videos and iframes in responsive designs}
